@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.component.css">
+    <link rel="stylesheet" href="app.component.ts">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <h4>Try it free 7 days then $20/mo thereafter</h4>
+        </div>
+        
+    
+        <div class="paragraph">
+        <p><H2>
+          Learn to Code by<br>
+          watching others
+      </H2>
+      <h5>
+          see how experience developer solve problems in real time<br>
+          watching scripted tutorials is great but understanding how<br>
+          developers think is invaluable
+      </h5>
+      </p>
+        
+            
+            
+    
+        </div>
+        <div class="one">
+            <div class="two">
+              <form [formGroup]="myReactiveForm" (ngsubmit)>
+                <div class="three">
+              <label for ="fname">first name</label>
+              <input type ="text" id="fname" formControlName="fname"><br>
+              </div>
+                <div class="four">
+                  <label for="lname">lastname</label>
+                <input type ="text" id="lname" formControlName="lname"><br>
+              </div>
+                
+              <div class="five">
+                <label for="email">emailaddress</label>
+                <input type ="text" id="email" formControlName="email"><br>
+              </div>
+
+
+                <div class="six">
+                  <label for="passw">password</label>
+                <input type ="text" id="passw" formControlName="passw"><br>
+                </div>
+
+                <div class="seven">
+                  <small #ngif="!myReactiveForm.get('email').valid">please enter the email</small>
+                  <button type="submit">submit</button>
+                </div>
+              </form>
+
+            </div>
+
+        </div>
+        <div class="eight">
+            
+              <h5>
+                  By clicking the button you are agreeing to
+                  our terms and conditions
+              </h5>
+
+            </div>
+        </div>
+        
+      </div>
+    
+    
+</body>
+</html>
